@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebRTC Calling App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📞 WebRTC Calling App</h1>
+  <p>Your Number: <span id="my-number">...</span></p>
+
+  <input type="text" id="call-number" placeholder="Enter number to call" />
+  <button id="call-btn">Call</button>
+  <p id="status">Status: Idle</p>
+
+  <div id="videos">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
